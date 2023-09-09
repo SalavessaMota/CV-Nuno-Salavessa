@@ -21,12 +21,11 @@ body {
 
 header {
   background: linear-gradient(90deg, black 0%, rgb(1, 255, 255) 100%);
-  color: #000;
+  color: black;
   text-align: center;
-  padding: 2vh;
 }
 header h1{
-  font-size: calc(3vw + 3vh + 1vmin);
+  font-size: calc(2vw + 2vh + 1vmin);
   text-align: center !important;
 }
 
@@ -101,16 +100,17 @@ nav ul li a:hover::after {
 
 .intro img {
   border-radius: 50%;
-  width: 30vw;
-  max-width: 50vw;
+  width: 25vw;
+  max-width: 40vw;
   margin-right: 2vw;
+  margin-bottom: 2vh;
 }
 .intro h2{
-  font-size: 4em;
+  font-size: 2em;
 }
 .intro p{
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
 }
 .intro span{
   font-size: 3em;
@@ -148,8 +148,8 @@ footer {
   justify-content: center;
   margin-bottom: 2em;
   gap: 1em;
-  max-width: 800px;
   margin: 2em auto;
+  max-width: 750px;
 }
 
 .img-container, .text-box {
@@ -157,23 +157,28 @@ footer {
 }
 
 .wrapper img {
-  width: 8em;;
+  width: 6em;
   height: auto;
   margin-right: 1em;
+  margin-left: 1em;
 }
 
+.wrapper p,
+.wrapper a {
+    word-break: break-word !important;
+}
 .contacts{
   font-size: 1.75em;
 }
 .contacts img{
-  width: 4em;
+  width: 2em;
   height: auto;
 }
 footer {
   text-align: center;
   background-color: transparent;
-  margin-top: 50vh;
   width: 100%;
+  bottom: 0.1;
 }
 
 @media screen and (max-width: 1000px) {
@@ -193,10 +198,10 @@ footer {
     text-align: center;
   }
   .intro h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .intro p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
