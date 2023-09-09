@@ -23,6 +23,7 @@ header {
   background: linear-gradient(90deg, black 0%, rgb(1, 255, 255) 100%);
   color: black;
   text-align: center;
+  width: 100vw;
 }
 header h1{
   font-size: calc(2vw + 2vh + 1vmin);
@@ -76,6 +77,23 @@ nav ul li a:hover{
 }
 nav ul li a:hover::after {
   width: 100%;
+}
+
+#download {
+  background: linear-gradient(90deg, black 0%, rgb(1, 255, 255) 100%);
+  color: rgb(1, 255,255);
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#download:hover {
+  background: rgb(1, 255, 255);
+  color: black;
 }
 
 .container {
@@ -161,11 +179,14 @@ footer {
   height: auto;
   margin-right: 1em;
   margin-left: 1em;
+  box-shadow: 0 0 20px rgba(1, 255, 255, 0.5);
+  border-radius: 10px;
 }
 
 .wrapper p,
 .wrapper a {
     word-break: break-word !important;
+    color: white;
 }
 .contacts{
   font-size: 1.75em;
